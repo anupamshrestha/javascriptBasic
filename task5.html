@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+</body>
+<script>
+    let num = [30, 40, 50];
+
+    let largest = "";
+    if (num[0] >= (num[1] && num[2])) {
+        largest = num[0];
+    } else if (num[1] >= (num[0] && num[2])) {
+        largest = num[1];
+        
+    } else {
+        largest = num[2];
+    }
+        
+    
+    document.getElementById("demo").innerHTML = num;
+    document.getElementById("demo1").innerHTML = "The largest is : " + largest;
+</script>
+</html>
