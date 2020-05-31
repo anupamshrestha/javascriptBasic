@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="demo1"></p>
-    <p id="demo"></p>
+    <p id="demo1"></p> <br>
+    <button onclick = "largestCountry()"> Find the largest</button>
     
 </body>
 <script>
@@ -15,7 +15,7 @@
    
     function largestCountry() {
         let largest = "";
-        for (i=0; i<country.length; i++) {
+        for (i=0; i<country.length; i++) { console.log(country.length);
         if (country[i].length >= (country[i+1].length && country[i+2].length)) {
             largest = country[i];
         } else if (country[i+1].length >= (country[i].length && country[i+2].length)) {
@@ -28,7 +28,7 @@
     return document.getElementById("demo").innerHTML = "The largest country is: " + largest;
     }
     document.getElementById("demo1").innerHTML = country;
-    largestCountry();
+   
    
 </script>
 </html>
