@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    let person = {
+        first_name : "John",
+        last_name : "Doe"
+    };
+    function myFunction() {
+       return person.first_name + " " + person.last_name;
+        
+    }
+    document.getElementById("demo").innerHTML = myFunction(); 
+</script>
+</html>
