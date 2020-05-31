@@ -8,25 +8,28 @@
 <body>
     <p id="demo1"></p> <br>
     <button onclick = "largestCountry()"> Find the largest</button>
+    <p id="demo"></p>
+   
     
 </body>
 <script>
     let country =["Australia ", " Germany ", " United States of American"];
    
     function largestCountry() {
-        let largest = "";
-        for (i=0; i<country.length; i++) { console.log(country.length);
-        if (country[i].length >= (country[i+1].length && country[i+2].length)) {
-            largest = country[i];
-        } else if (country[i+1].length >= (country[i].length && country[i+2].length)) {
-            largest = country[i+1];
+        if (country[0].length >= (country[1].length && country[2].length)) {
+            largest = country[0];
+            console.log("largest1>>", largest);
+                 
+        } else if (country[1] >= (country[0] && country[2])) {
+            largest = country[1];
+            
         } else {
-            largest = country[i+2];
+            largest = country[2];
         }
-       
+       return document.getElementById("demo").innerHTML = "The largest country is: " + largest;
+
     }
-    return document.getElementById("demo").innerHTML = "The largest country is: " + largest;
-    }
+         
     document.getElementById("demo1").innerHTML = country;
    
    
