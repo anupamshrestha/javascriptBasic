@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Celcius : </b>  <input type="number" id = "celcius">
+   <button onclick="c2F()"> Submit</button>
+    <p id="demo"></p>
+    <br><br>
+
+    <b>Faranheit : </b> <input type="number" id = "faranheit">
+    <button onclick="f2C()"> Submit</button>
+    <p id="demo1"></p>
+</body>
+<script>
+   function c2F() {
+       celcius = document.getElementById("celcius").value;
+       f = (9*celcius)/5 + 32;
+       return document.getElementById("demo").innerHTML = "The faranheit is : " + f;
+   }
+   function f2C() {
+        faranheit = document.getElementById("faranheit").value;
+       c = (faranheit-32)*5/9;
+       return document.getElementById("demo1").innerHTML = "The celcius is : " + c;
+   }
+</script>
+</html>
